@@ -1,9 +1,16 @@
-function [screen_width, screen_height] = screen_properties(screen_number)
+classdef Screen_Properties < Session
     
-    if nargin < 1
-        screen_number = 0;  % primary monitor
+    properties
+        monitor = 0  % use the primary screen
+        width
+        height
+        framerate
     end
     
-    [screen_width, screen_height] = Screen('WindowSize', screen_number);
+    methods
+        
+
+        
+    end
     
 end
